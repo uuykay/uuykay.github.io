@@ -1,0 +1,39 @@
+{
+  "name": "stem-games-2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/app.js",
+  "scripts": {
+		"serve": "node ./src/helpers/liveServer.js",
+		"nodemon": "nodemon --delay 4 --exec npm run dev",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development --open",
+    "dev": "webpack --config ./webpack.config.js --mode development",
+    "prod": "webpack --config ./webpack.config.js --mode production"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "html-webpack-plugin": "^3.2.0"
+  },
+  "prettier": {
+    "printWidth": "100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://uukay@bitbucket.org/uukay/stem-games-2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/uukay/stem-games-2018#readme",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "nodemon": "^1.18.3"
+  }
+}
