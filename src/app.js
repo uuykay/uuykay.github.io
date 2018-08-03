@@ -165,7 +165,7 @@ function scene3PickCar() {
 // Set up the ground, wall and car that was chosen.
 function startGame(car_type_select) {
   console.log("startGame");
-
+  collided = false;
   ground = drawGround(canvas_width, canvas_height);
   stage.addChild(ground);
 
